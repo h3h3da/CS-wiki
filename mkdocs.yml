@@ -1,0 +1,72 @@
+# Project Information
+site_name: Cyber Security Wiki
+site_description: CS-Wiki
+site_author: Cyber Security Wiki Team
+site_url: http://liucunzhan.com/cswiki/
+
+# Repository
+repo_name: 'h3h3da/CS-wiki'
+repo_url: 'https://github.com/h3h3da/CS-wiki'
+edit_uri: 'blob/master/docs/'
+
+theme:
+  name: material
+  language: zh # 语言，默认为en
+  features:
+    - navigation.tabs
+  palette:
+    primary: 'white'
+    accent: 'red'
+    scheme: preference
+  font: # 字体
+    text: Ubuntu # 正文，默认为Roboto
+    code: Ubuntu Mono # 代码，默认为Roboto Mono
+
+# Copyright
+copyright: 'Copyright &copy; 2019 - 2020 Cyber Security Wiki Team'
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  
+nav:
+  - Introduction: index.md
+  - IEEE S&P:
+    - About: ieee_sp/about_zh.md
+  - Usenix Sec:
+    - About: usenix_sec/about_zh.md
+  - ACM CCS:
+    - About: acm_ccs/about_zh.md
+  - NDSS:
+    - About: ndss/about_zh.md
+  - Eurocrypt:
+    - About: eurocrypt/about_zh.md
+  - Others:
+    - About: others/about_zh.md
